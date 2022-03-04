@@ -1,0 +1,169 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+    font-size: 18px;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.calculadora{
+    width: 400px;
+    height: 450px;
+    background-image: url(./pngtree-abstract-modern-neon-frame-background-image_339537.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+}
+
+.img-calculadora{
+    position: absolute;
+    width: 400px;
+    opacity: 0.5;
+}
+
+.pantalla-calculadora{
+    width: 92%;
+    height: 80px;
+    background-color: gainsboro;
+    margin: 30px auto 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* justify-content: flex-end; */
+    border-radius: 3px;
+    flex-direction: column;
+}
+
+.texto-pantalla{
+    font-weight: 600;
+    font-size: 2.5rem;
+    margin-right: 20px;
+    overflow: hidden;
+    margin-left: auto;
+    color: black;
+}
+
+.resultado-pantalla{
+    margin-left: 10px;
+    margin-right: auto;
+    opacity: 0.6;
+    color: black;
+   
+}
+
+.numeros-cuadrados{
+    width: 60px;
+    height: 60px;
+    background-color: gainsboro;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.596);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    
+}
+
+.paneles{
+    display: flex;
+    margin: 10px;
+    gap: 1.7em;
+}
+
+.panel-izquierdo{
+    width: 210px;
+    /* background-color: red; */
+    height: 290px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+}
+
+.panel-derecho{
+    width: 150px;
+    height: 290px;
+    /* background-color: rebeccapurple; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+
+}
+
+.numero-0{
+    grid-column: 1/3;
+    height: 60px;
+    width: 130px;
+    background-color: gainsboro;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.596);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+.boton-suma{
+    background-color: gainsboro;
+    height: 135px;
+    width: 60px;
+    grid-column: 2;
+    grid-row: 3/5;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.596);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+}
+
+.efecto-botones:hover{
+    background-color: white;
+}
+
+
+@media only screen and (max-width:450px){
+    .calculadora{
+        width: 320px;
+        height: 420px;
+    }
+
+    .numeros-cuadrados{
+        width: 50px;
+        height: 50px;
+    }
+
+    .numero-0{
+       height: 50px;
+       width: 100px;
+    }
+
+    .boton-suma{
+        height: 120px;
+        width: 50px;
+        
+
+    }
+
+    .paneles{
+        gap: 0.7em;
+    }
+
+    .panel-derecho{
+        height: 260px;
+    }
+    
+    .panel-izquierdo{
+        height: 260px;
+    }
+}
